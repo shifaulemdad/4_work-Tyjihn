@@ -5,16 +5,15 @@ void setup() {
   movingY = 150;
   radius = 50;
   size(500, 500);
-  fill(190, 115, 255);
   circleRow(50, 450, 50, 100);
   frameRate(180);
 }
 
 void draw() {
   background(255);//clear screen
-  fill(190, 115, 255);
+  fill(#00ffff);
   circleRow(50, 450, 50, 100);
-  fill(185, 250, 255);
+  fill(#ff00ff);
   circle(movingX, movingY, 2*radius);
   movingX++;
   if (movingX + radius >= width) {
